@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f8ce0e8b71b580210dbd82932287bf4b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f8ce0e8b71b580210dbd82932287bf4b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f8ce0e8b71b580210dbd82932287bf4b = L.map(
+                "map_f8ce0e8b71b580210dbd82932287bf4b",
+                {
+                    center: [46.6, 2.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1131c84be533e9177ddd090f4807869d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1131c84be533e9177ddd090f4807869d.addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+            var circle_marker_5b1292d9ba6a72551561888ef3375712 = L.circleMarker(
+                [43.3, 5.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_7060c295ba999fc62590227a89c45852 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8013acbde79f084820eea3e1712f88de = $(`<div id="html_8013acbde79f084820eea3e1712f88de" style="width: 100.0%; height: 100.0%;">AIX-MARSEILLE: 14 postes</div>`)[0];
+                popup_7060c295ba999fc62590227a89c45852.setContent(html_8013acbde79f084820eea3e1712f88de);
+            
+        
+
+        circle_marker_5b1292d9ba6a72551561888ef3375712.bindPopup(popup_7060c295ba999fc62590227a89c45852)
+        ;
+
+        
+    
+    
+            var circle_marker_d6c5cc614d368cfa0e3c31dc30a44c2a = L.circleMarker(
+                [49.9, 2.3],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_5778fd4cf9500ec6a6cc4adb747bdbf0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87c8ee98ff68601b4117c2e5a87c099a = $(`<div id="html_87c8ee98ff68601b4117c2e5a87c099a" style="width: 100.0%; height: 100.0%;">AMIENS: 6 postes</div>`)[0];
+                popup_5778fd4cf9500ec6a6cc4adb747bdbf0.setContent(html_87c8ee98ff68601b4117c2e5a87c099a);
+            
+        
+
+        circle_marker_d6c5cc614d368cfa0e3c31dc30a44c2a.bindPopup(popup_5778fd4cf9500ec6a6cc4adb747bdbf0)
+        ;
+
+        
+    
+    
+            var circle_marker_61b9cf3757172dea23e3a22a740b4afe = L.circleMarker(
+                [47.2, 6.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_3d050620d90837933845619052f00ed9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb4eedc337280b767c61384188ddf253 = $(`<div id="html_cb4eedc337280b767c61384188ddf253" style="width: 100.0%; height: 100.0%;">BESANCON: 2 postes</div>`)[0];
+                popup_3d050620d90837933845619052f00ed9.setContent(html_cb4eedc337280b767c61384188ddf253);
+            
+        
+
+        circle_marker_61b9cf3757172dea23e3a22a740b4afe.bindPopup(popup_3d050620d90837933845619052f00ed9)
+        ;
+
+        
+    
+    
+            var circle_marker_6c42e397859b7e7b7f7eb2d483eea4ce = L.circleMarker(
+                [44.8, -0.6],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_50b37de510525ba66be98f8bd7fe2782 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ff500fef0c605b2d843a4b3ac67ea8f = $(`<div id="html_4ff500fef0c605b2d843a4b3ac67ea8f" style="width: 100.0%; height: 100.0%;">BORDEAUX: 7 postes</div>`)[0];
+                popup_50b37de510525ba66be98f8bd7fe2782.setContent(html_4ff500fef0c605b2d843a4b3ac67ea8f);
+            
+        
+
+        circle_marker_6c42e397859b7e7b7f7eb2d483eea4ce.bindPopup(popup_50b37de510525ba66be98f8bd7fe2782)
+        ;
+
+        
+    
+    
+            var circle_marker_513c3520526c72c28bc314db525f247a = L.circleMarker(
+                [45.8, 3.1],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_0106d90cc6144578686797508a51d3f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a6153435cc8a47d2199beda8844a8f6 = $(`<div id="html_0a6153435cc8a47d2199beda8844a8f6" style="width: 100.0%; height: 100.0%;">CLERMONT-FERRAND: 8 postes</div>`)[0];
+                popup_0106d90cc6144578686797508a51d3f0.setContent(html_0a6153435cc8a47d2199beda8844a8f6);
+            
+        
+
+        circle_marker_513c3520526c72c28bc314db525f247a.bindPopup(popup_0106d90cc6144578686797508a51d3f0)
+        ;
+
+        
+    
+    
+            var circle_marker_fbaf9f374f5555f46d37c503af7d1941 = L.circleMarker(
+                [42.0, 9.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_d17397a61b1bbc7e6e1178af505af428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_474219e4a0d648a4c028a1fe983f4e24 = $(`<div id="html_474219e4a0d648a4c028a1fe983f4e24" style="width: 100.0%; height: 100.0%;">CORSE: 1 postes</div>`)[0];
+                popup_d17397a61b1bbc7e6e1178af505af428.setContent(html_474219e4a0d648a4c028a1fe983f4e24);
+            
+        
+
+        circle_marker_fbaf9f374f5555f46d37c503af7d1941.bindPopup(popup_d17397a61b1bbc7e6e1178af505af428)
+        ;
+
+        
+    
+    
+            var circle_marker_0ef7282521681a31bb5428fd903468fe = L.circleMarker(
+                [48.8, 2.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_f8a51e11370eb84ac063080f5e86279c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92c76c0ae28531802a7dc936b6579597 = $(`<div id="html_92c76c0ae28531802a7dc936b6579597" style="width: 100.0%; height: 100.0%;">CRETEIL: 16 postes</div>`)[0];
+                popup_f8a51e11370eb84ac063080f5e86279c.setContent(html_92c76c0ae28531802a7dc936b6579597);
+            
+        
+
+        circle_marker_0ef7282521681a31bb5428fd903468fe.bindPopup(popup_f8a51e11370eb84ac063080f5e86279c)
+        ;
+
+        
+    
+    
+            var circle_marker_de13867f8bec9783b338a3e431269fd3 = L.circleMarker(
+                [47.3, 5.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_deb318804c3c4c7f006fbe9852183ac3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e32ca024af48a3d45ffd9a37be775e9 = $(`<div id="html_4e32ca024af48a3d45ffd9a37be775e9" style="width: 100.0%; height: 100.0%;">DIJON: 4 postes</div>`)[0];
+                popup_deb318804c3c4c7f006fbe9852183ac3.setContent(html_4e32ca024af48a3d45ffd9a37be775e9);
+            
+        
+
+        circle_marker_de13867f8bec9783b338a3e431269fd3.bindPopup(popup_deb318804c3c4c7f006fbe9852183ac3)
+        ;
+
+        
+    
+    
+            var circle_marker_592f31d8dde63bbf3bb75ada2fd75d24 = L.circleMarker(
+                [45.2, 5.7],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_9c150aee0b15d96e576e9974e3c994dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd2f6a34490f38b9a5b6cabdea71ae3d = $(`<div id="html_dd2f6a34490f38b9a5b6cabdea71ae3d" style="width: 100.0%; height: 100.0%;">GRENOBLE: 7 postes</div>`)[0];
+                popup_9c150aee0b15d96e576e9974e3c994dd.setContent(html_dd2f6a34490f38b9a5b6cabdea71ae3d);
+            
+        
+
+        circle_marker_592f31d8dde63bbf3bb75ada2fd75d24.bindPopup(popup_9c150aee0b15d96e576e9974e3c994dd)
+        ;
+
+        
+    
+    
+            var circle_marker_19577adbc080cc8a9045da59e44e4d71 = L.circleMarker(
+                [16.2, -61.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_43eb1a1767f706703358d5e5365827db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2bf5ed8f4313999da208a1533cf839d = $(`<div id="html_b2bf5ed8f4313999da208a1533cf839d" style="width: 100.0%; height: 100.0%;">GUADELOUPE: 1 postes</div>`)[0];
+                popup_43eb1a1767f706703358d5e5365827db.setContent(html_b2bf5ed8f4313999da208a1533cf839d);
+            
+        
+
+        circle_marker_19577adbc080cc8a9045da59e44e4d71.bindPopup(popup_43eb1a1767f706703358d5e5365827db)
+        ;
+
+        
+    
+    
+            var circle_marker_d4c987fd2fbac2ad56ad11b53f797622 = L.circleMarker(
+                [4.9, -52.3],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_ccb941283b741ceba65b774435233276 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9c28f3e1743fe9b3f50e69c81a4953a = $(`<div id="html_b9c28f3e1743fe9b3f50e69c81a4953a" style="width: 100.0%; height: 100.0%;">GUYANE: 2 postes</div>`)[0];
+                popup_ccb941283b741ceba65b774435233276.setContent(html_b9c28f3e1743fe9b3f50e69c81a4953a);
+            
+        
+
+        circle_marker_d4c987fd2fbac2ad56ad11b53f797622.bindPopup(popup_ccb941283b741ceba65b774435233276)
+        ;
+
+        
+    
+    
+            var circle_marker_d6d0521f1b19042bfcea076ea80a7d8f = L.circleMarker(
+                [-21.1, 55.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_d895e0baa8ffb4ceb1023fb89905150f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff4a151b0cc46d3259f46121b40eb291 = $(`<div id="html_ff4a151b0cc46d3259f46121b40eb291" style="width: 100.0%; height: 100.0%;">LA REUNION: 5 postes</div>`)[0];
+                popup_d895e0baa8ffb4ceb1023fb89905150f.setContent(html_ff4a151b0cc46d3259f46121b40eb291);
+            
+        
+
+        circle_marker_d6d0521f1b19042bfcea076ea80a7d8f.bindPopup(popup_d895e0baa8ffb4ceb1023fb89905150f)
+        ;
+
+        
+    
+    
+            var circle_marker_461926dc7d916869ce01f2c65f505c3d = L.circleMarker(
+                [50.6, 3.1],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_0495b4f355b10aebc34238d84c18d524 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f870c1a9fe68e5d513537101d803073c = $(`<div id="html_f870c1a9fe68e5d513537101d803073c" style="width: 100.0%; height: 100.0%;">LILLE: 6 postes</div>`)[0];
+                popup_0495b4f355b10aebc34238d84c18d524.setContent(html_f870c1a9fe68e5d513537101d803073c);
+            
+        
+
+        circle_marker_461926dc7d916869ce01f2c65f505c3d.bindPopup(popup_0495b4f355b10aebc34238d84c18d524)
+        ;
+
+        
+    
+    
+            var circle_marker_bec824d67c570af0797a5c65a03a2751 = L.circleMarker(
+                [45.8, 1.3],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_e8cbe394a5a607131b7f99153e6f39d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05b8bfc076734a0414562604e1049093 = $(`<div id="html_05b8bfc076734a0414562604e1049093" style="width: 100.0%; height: 100.0%;">LIMOGES: 3 postes</div>`)[0];
+                popup_e8cbe394a5a607131b7f99153e6f39d9.setContent(html_05b8bfc076734a0414562604e1049093);
+            
+        
+
+        circle_marker_bec824d67c570af0797a5c65a03a2751.bindPopup(popup_e8cbe394a5a607131b7f99153e6f39d9)
+        ;
+
+        
+    
+    
+            var circle_marker_5f4a25a7d06515b9da2b48e318530011 = L.circleMarker(
+                [45.8, 4.8],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_bfb1124944a6df234755454703a59a47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_741aef5ef4acbb06bf02693fda610e02 = $(`<div id="html_741aef5ef4acbb06bf02693fda610e02" style="width: 100.0%; height: 100.0%;">LYON: 7 postes</div>`)[0];
+                popup_bfb1124944a6df234755454703a59a47.setContent(html_741aef5ef4acbb06bf02693fda610e02);
+            
+        
+
+        circle_marker_5f4a25a7d06515b9da2b48e318530011.bindPopup(popup_bfb1124944a6df234755454703a59a47)
+        ;
+
+        
+    
+    
+            var circle_marker_0ebda6d0a8e6a391e404102707f9be18 = L.circleMarker(
+                [14.6, -61.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_a96262c93495f6139803c7a2b87734f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_516cfb9561a285aa56740b038a737ec4 = $(`<div id="html_516cfb9561a285aa56740b038a737ec4" style="width: 100.0%; height: 100.0%;">MARTINIQUE: 1 postes</div>`)[0];
+                popup_a96262c93495f6139803c7a2b87734f0.setContent(html_516cfb9561a285aa56740b038a737ec4);
+            
+        
+
+        circle_marker_0ebda6d0a8e6a391e404102707f9be18.bindPopup(popup_a96262c93495f6139803c7a2b87734f0)
+        ;
+
+        
+    
+    
+            var circle_marker_a9fb2645e098be807d4ac079f4fc9609 = L.circleMarker(
+                [-12.8, 45.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_dab1b61ac7940651e082c24113d3a4cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea358d1cc4f3e572ec20ea3d4eaa07c5 = $(`<div id="html_ea358d1cc4f3e572ec20ea3d4eaa07c5" style="width: 100.0%; height: 100.0%;">MAYOTTE: 2 postes</div>`)[0];
+                popup_dab1b61ac7940651e082c24113d3a4cb.setContent(html_ea358d1cc4f3e572ec20ea3d4eaa07c5);
+            
+        
+
+        circle_marker_a9fb2645e098be807d4ac079f4fc9609.bindPopup(popup_dab1b61ac7940651e082c24113d3a4cb)
+        ;
+
+        
+    
+    
+            var circle_marker_bdcaf6a92a85da60bc7f24fcf0770bfb = L.circleMarker(
+                [43.6, 3.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_c2044de7c7805833ea322d212571541b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f87dd6a3f75229f9b2a8e35682691522 = $(`<div id="html_f87dd6a3f75229f9b2a8e35682691522" style="width: 100.0%; height: 100.0%;">MONTPELLIER: 6 postes</div>`)[0];
+                popup_c2044de7c7805833ea322d212571541b.setContent(html_f87dd6a3f75229f9b2a8e35682691522);
+            
+        
+
+        circle_marker_bdcaf6a92a85da60bc7f24fcf0770bfb.bindPopup(popup_c2044de7c7805833ea322d212571541b)
+        ;
+
+        
+    
+    
+            var circle_marker_4c9f3396f948397e1698e4e7545a05fc = L.circleMarker(
+                [48.7, 6.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_38d8f0fd4b21733dea31bfe3e552527b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fab773f8dd0ed941f40a222786dd9722 = $(`<div id="html_fab773f8dd0ed941f40a222786dd9722" style="width: 100.0%; height: 100.0%;">NANCY-METZ: 4 postes</div>`)[0];
+                popup_38d8f0fd4b21733dea31bfe3e552527b.setContent(html_fab773f8dd0ed941f40a222786dd9722);
+            
+        
+
+        circle_marker_4c9f3396f948397e1698e4e7545a05fc.bindPopup(popup_38d8f0fd4b21733dea31bfe3e552527b)
+        ;
+
+        
+    
+    
+            var circle_marker_2ec7436df265fcb6ac626a2a843a4c42 = L.circleMarker(
+                [47.2, -1.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_587896594b55f5049bbb7c6b82cbe117 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ddd0f7a8c0f54c00d9d86eb9fc051c2 = $(`<div id="html_8ddd0f7a8c0f54c00d9d86eb9fc051c2" style="width: 100.0%; height: 100.0%;">NANTES: 13 postes</div>`)[0];
+                popup_587896594b55f5049bbb7c6b82cbe117.setContent(html_8ddd0f7a8c0f54c00d9d86eb9fc051c2);
+            
+        
+
+        circle_marker_2ec7436df265fcb6ac626a2a843a4c42.bindPopup(popup_587896594b55f5049bbb7c6b82cbe117)
+        ;
+
+        
+    
+    
+            var circle_marker_e5883f5490e266cea11415b549842606 = L.circleMarker(
+                [43.7, 7.3],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_61dd178de11f303a219127db0ef03ff9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2b318542451eb750c128e2f4b79ac4b = $(`<div id="html_a2b318542451eb750c128e2f4b79ac4b" style="width: 100.0%; height: 100.0%;">NICE: 5 postes</div>`)[0];
+                popup_61dd178de11f303a219127db0ef03ff9.setContent(html_a2b318542451eb750c128e2f4b79ac4b);
+            
+        
+
+        circle_marker_e5883f5490e266cea11415b549842606.bindPopup(popup_61dd178de11f303a219127db0ef03ff9)
+        ;
+
+        
+    
+    
+            var circle_marker_9cdf0722e1021614fa5c668260e64e69 = L.circleMarker(
+                [49.2, 0.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_a6d4fd0f2f67668b0ca8097d5afd8704 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56aea241fffa78ef2c824f0b1c267861 = $(`<div id="html_56aea241fffa78ef2c824f0b1c267861" style="width: 100.0%; height: 100.0%;">NORMANDIE: 9 postes</div>`)[0];
+                popup_a6d4fd0f2f67668b0ca8097d5afd8704.setContent(html_56aea241fffa78ef2c824f0b1c267861);
+            
+        
+
+        circle_marker_9cdf0722e1021614fa5c668260e64e69.bindPopup(popup_a6d4fd0f2f67668b0ca8097d5afd8704)
+        ;
+
+        
+    
+    
+            var circle_marker_d02fd689ebc6d46bc40b14f83eeb967e = L.circleMarker(
+                [-21.1, 166.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_a0d234b2a34b62a162aa32896ed346f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_954309fcd09b64bc8ca70e7b62328c80 = $(`<div id="html_954309fcd09b64bc8ca70e7b62328c80" style="width: 100.0%; height: 100.0%;">NOUVELLE-CALEDONIE: 2 postes</div>`)[0];
+                popup_a0d234b2a34b62a162aa32896ed346f3.setContent(html_954309fcd09b64bc8ca70e7b62328c80);
+            
+        
+
+        circle_marker_d02fd689ebc6d46bc40b14f83eeb967e.bindPopup(popup_a0d234b2a34b62a162aa32896ed346f3)
+        ;
+
+        
+    
+    
+            var circle_marker_ee551f69b470ea49f8255bba39867aea = L.circleMarker(
+                [47.9, 1.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_4ea161aa9b1ff4f4bdcb6aa4b19994d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae5cc348d58ceef0c58167f49525b8da = $(`<div id="html_ae5cc348d58ceef0c58167f49525b8da" style="width: 100.0%; height: 100.0%;">ORLEANS-TOURS: 17 postes</div>`)[0];
+                popup_4ea161aa9b1ff4f4bdcb6aa4b19994d8.setContent(html_ae5cc348d58ceef0c58167f49525b8da);
+            
+        
+
+        circle_marker_ee551f69b470ea49f8255bba39867aea.bindPopup(popup_4ea161aa9b1ff4f4bdcb6aa4b19994d8)
+        ;
+
+        
+    
+    
+            var circle_marker_968d651d1360edb01c1af0f74096a473 = L.circleMarker(
+                [48.8, 2.3],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_1c65bc0c4f39e12453ea2b46836e3815 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_790e896f0f944a26b81ebfaf72edd39f = $(`<div id="html_790e896f0f944a26b81ebfaf72edd39f" style="width: 100.0%; height: 100.0%;">PARIS: 2 postes</div>`)[0];
+                popup_1c65bc0c4f39e12453ea2b46836e3815.setContent(html_790e896f0f944a26b81ebfaf72edd39f);
+            
+        
+
+        circle_marker_968d651d1360edb01c1af0f74096a473.bindPopup(popup_1c65bc0c4f39e12453ea2b46836e3815)
+        ;
+
+        
+    
+    
+            var circle_marker_65847fb194d99421d37f1c102b1e07ef = L.circleMarker(
+                [46.6, 0.3],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_cfb0c50c244f368674b8e5b685b4bd3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa0020cdc61b902cada49f4ccd60d3a4 = $(`<div id="html_fa0020cdc61b902cada49f4ccd60d3a4" style="width: 100.0%; height: 100.0%;">POITIERS: 2 postes</div>`)[0];
+                popup_cfb0c50c244f368674b8e5b685b4bd3b.setContent(html_fa0020cdc61b902cada49f4ccd60d3a4);
+            
+        
+
+        circle_marker_65847fb194d99421d37f1c102b1e07ef.bindPopup(popup_cfb0c50c244f368674b8e5b685b4bd3b)
+        ;
+
+        
+    
+    
+            var circle_marker_89d15fc864fd445bd943948782522fe0 = L.circleMarker(
+                [-17.6, -149.6],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_c0d9df2bf9ed0f5a229821c714581fbd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56186d5e1abc60839f0bce9b9c803f8d = $(`<div id="html_56186d5e1abc60839f0bce9b9c803f8d" style="width: 100.0%; height: 100.0%;">POLYNESIE FRANCAISE: 4 postes</div>`)[0];
+                popup_c0d9df2bf9ed0f5a229821c714581fbd.setContent(html_56186d5e1abc60839f0bce9b9c803f8d);
+            
+        
+
+        circle_marker_89d15fc864fd445bd943948782522fe0.bindPopup(popup_c0d9df2bf9ed0f5a229821c714581fbd)
+        ;
+
+        
+    
+    
+            var circle_marker_716408015a99e96c5f7a61fbe87643ac = L.circleMarker(
+                [49.2, 4.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_3f5d4b521117ae51e3e058aa96535633 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5a17b782c0d1dd679d318e27924210b = $(`<div id="html_d5a17b782c0d1dd679d318e27924210b" style="width: 100.0%; height: 100.0%;">REIMS: 7 postes</div>`)[0];
+                popup_3f5d4b521117ae51e3e058aa96535633.setContent(html_d5a17b782c0d1dd679d318e27924210b);
+            
+        
+
+        circle_marker_716408015a99e96c5f7a61fbe87643ac.bindPopup(popup_3f5d4b521117ae51e3e058aa96535633)
+        ;
+
+        
+    
+    
+            var circle_marker_6d3055de1d9c6b76caa8707ceb61558e = L.circleMarker(
+                [48.1, -1.7],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_ad690914c84beaca772f581740691d7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9189d194a4ffa31911622d3a5ba9fac9 = $(`<div id="html_9189d194a4ffa31911622d3a5ba9fac9" style="width: 100.0%; height: 100.0%;">RENNES: 12 postes</div>`)[0];
+                popup_ad690914c84beaca772f581740691d7a.setContent(html_9189d194a4ffa31911622d3a5ba9fac9);
+            
+        
+
+        circle_marker_6d3055de1d9c6b76caa8707ceb61558e.bindPopup(popup_ad690914c84beaca772f581740691d7a)
+        ;
+
+        
+    
+    
+            var circle_marker_d9a53632786eb5e24c0ab7b8439728c7 = L.circleMarker(
+                [48.6, 7.7],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_a454834b61d65e405411c0ae416338f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6afbbdfd123c462ff84fad05c3adea25 = $(`<div id="html_6afbbdfd123c462ff84fad05c3adea25" style="width: 100.0%; height: 100.0%;">STRASBOURG: 4 postes</div>`)[0];
+                popup_a454834b61d65e405411c0ae416338f5.setContent(html_6afbbdfd123c462ff84fad05c3adea25);
+            
+        
+
+        circle_marker_d9a53632786eb5e24c0ab7b8439728c7.bindPopup(popup_a454834b61d65e405411c0ae416338f5)
+        ;
+
+        
+    
+    
+            var circle_marker_902f19aa1cef99bb4bab079bff06a39a = L.circleMarker(
+                [43.6, 1.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_ed5621966753b8aa9bb6f0d107384e8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3a6d0dc5f39087531d9917c5f682e92 = $(`<div id="html_b3a6d0dc5f39087531d9917c5f682e92" style="width: 100.0%; height: 100.0%;">TOULOUSE: 8 postes</div>`)[0];
+                popup_ed5621966753b8aa9bb6f0d107384e8e.setContent(html_b3a6d0dc5f39087531d9917c5f682e92);
+            
+        
+
+        circle_marker_902f19aa1cef99bb4bab079bff06a39a.bindPopup(popup_ed5621966753b8aa9bb6f0d107384e8e)
+        ;
+
+        
+    
+    
+            var circle_marker_72f89879a0025fabc582c2e3c6d82146 = L.circleMarker(
+                [48.8, 2.1],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_02d2aff077a8106b4865b9c3fb2ead9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a95659ce7bc4146c89f7a6c4930d7ec7 = $(`<div id="html_a95659ce7bc4146c89f7a6c4930d7ec7" style="width: 100.0%; height: 100.0%;">VERSAILLES: 15 postes</div>`)[0];
+                popup_02d2aff077a8106b4865b9c3fb2ead9d.setContent(html_a95659ce7bc4146c89f7a6c4930d7ec7);
+            
+        
+
+        circle_marker_72f89879a0025fabc582c2e3c6d82146.bindPopup(popup_02d2aff077a8106b4865b9c3fb2ead9d)
+        ;
+
+        
+    
+    
+            var circle_marker_c6b5f7308e235af85db96771a82b1029 = L.circleMarker(
+                [-13.3, -176.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_f8ce0e8b71b580210dbd82932287bf4b);
+        
+    
+        var popup_81bc6070ffed1fad34217ce728764162 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a796ded24fee1d2d21da3b4137714f33 = $(`<div id="html_a796ded24fee1d2d21da3b4137714f33" style="width: 100.0%; height: 100.0%;">WALLIS ET FUTUNA: 1 postes</div>`)[0];
+                popup_81bc6070ffed1fad34217ce728764162.setContent(html_a796ded24fee1d2d21da3b4137714f33);
+            
+        
+
+        circle_marker_c6b5f7308e235af85db96771a82b1029.bindPopup(popup_81bc6070ffed1fad34217ce728764162)
+        ;
+
+        
+    
+</script>
+</html>
